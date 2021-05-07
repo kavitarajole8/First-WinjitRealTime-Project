@@ -1,5 +1,9 @@
 package TestContext;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.Properties;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -7,12 +11,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import ConfigReader.ConfigDataProvider;
 import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 
+	//public ConfigDataProvider config;
 	public  static WebDriver driver;
+	
 
 	public static WebDriver BrowserFactory(String BrowserName) {
 
